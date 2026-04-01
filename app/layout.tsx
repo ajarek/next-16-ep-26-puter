@@ -1,19 +1,9 @@
 import type { Metadata } from "next"
-import { Inter, Instrument_Serif } from "next/font/google"
+import { inter, instrumentSerif } from "@/app/fonts"
 import "./globals.css"
 import Navbar from "@/components/Navbar"
 import { ThemeProvider } from "@/components/ThemeProvider"
-
-export const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-})
-
-export const instrumentSerif = Instrument_Serif({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-instrument-serif",
-})
+import { TooltipProvider } from "@/components/ui/tooltip"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -34,12 +24,14 @@ export default function RootLayout({
       <body className='min-h-full flex flex-col'>
          <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
+          <TooltipProvider>
             <Navbar />
             {children}
+          </TooltipProvider>
           </ThemeProvider>
         </body>
     </html>

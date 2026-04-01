@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+export const inter  = Inter({
+    variable: "--font-inter",
+    subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+export const instrumentSerif = Instrument_Serif({
+    weight: "400",
+    subsets: ["latin"],
+    variable: "--font-instrument-serif",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+                className={`${instrumentSerif.variable} ${inter.variable}  antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
-W tym repozytorium zbudujesz oparte na sztucznej inteligencji oprogramowanie SaaS do wizualizacji architektonicznych, wykorzystując React, TypeScript i Puter.js. Użyj modeli AI od Claude do Gemini, aby przekształcić dwuwymiarowe plany pięter w fotorealistyczne rendery 3D z trwałym hostingiem i trwałymi metadanymi. Projekt obejmuje fotorealistyczne renderowanie 2D do 3D, bezserwerowe procesy robocze, wysokowydajną pamięć masową KV oraz globalny kanał społecznościowy.
+W tym repozytorium zbudujesz oparte na sztucznej inteligencji oprogramowanie SaaS do wizualizacji architektonicznych, wykorzystując Next.js, TypeScript i Puter.js. Użyj modeli AI od Claude do Gemini, aby przekształcić dwuwymiarowe plany pięter w fotorealistyczne rendery 3D z trwałym hostingiem i trwałymi metadanymi. Projekt obejmuje fotorealistyczne renderowanie 2D do 3D, bezserwerowe procesy robocze, wysokowydajną pamięć masową KV oraz globalny kanał społecznościowy.
 First, run the development server:
 
 ```bash

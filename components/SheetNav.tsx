@@ -7,7 +7,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { BookText, List } from "lucide-react"
+import { Box, List } from "lucide-react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
@@ -37,8 +37,8 @@ export function SheetNav() {
         <SheetHeader>
           <SheetTitle className='text-xl font-semibold underline underline-offset-4'>
             <Link href='/' className='flex items-center gap-2'>
-              <BookText className='text-primary' size={32} />
-              E-Biblioteka
+              <Box className='text-primary' size={32} />
+              3D Plans
             </Link>
           </SheetTitle>
         </SheetHeader>

@@ -12,13 +12,13 @@ export const navLinks = [
         icon: <Wallet />,
     },
     {
-        href: "/community",
-        label: "Community",
+        href: "/about",
+        label: "About",
         icon: <Users />,
     },
     {
-        href: "/enterprise",
-        label: "Enterprise",
+        href: "/contact",
+        label: "Contact",
         icon: <Building />,
     },
 ]

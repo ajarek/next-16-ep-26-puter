@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/tooltip"
 import { navLinks } from "@/data/nav-links"
 import { cn } from "@/lib/utils"
+import { instrumentSerif } from "@/app/fonts"
 
 export function SheetNav() {
   const pathname = usePathname()
@@ -35,10 +36,10 @@ export function SheetNav() {
       </Tooltip>
       <SheetContent className='lg:hidden   opacity-75 overflow-y-auto sheet-content'>
         <SheetHeader>
-          <SheetTitle className='text-xl font-semibold underline underline-offset-4'>
-            <Link href='/' className='flex items-center gap-2'>
+          <SheetTitle className='text-xl font-semibold'>
+            <Link href='/' className={`flex items-center gap-2 text-xl md:text-2xl font-bold ${instrumentSerif.className} `}>
               <Box className='text-primary' size={32} />
-              3D Plans
+              Puter.js
             </Link>
           </SheetTitle>
         </SheetHeader>

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import React, { useEffect, useRef, useState } from "react"
@@ -58,7 +59,6 @@ const ImageDescriber = () => {
         throw new Error("Could not get canvas context")
       }
 
-      // Match canvas dimensions to the video resolution for better quality
       canvas.width = video.videoWidth
       canvas.height = video.videoHeight
       context.drawImage(video, 0, 0, canvas.width, canvas.height)
@@ -70,7 +70,6 @@ const ImageDescriber = () => {
           "Describe this image",
           imageData,
         )
-        // Extract string explicitly to avoid React object rendering errors
         const text =
           typeof response === "string"
             ? response
@@ -143,7 +142,6 @@ const ImageDescriber = () => {
 
         <canvas ref={canvasRef} className='hidden' />
 
-        {/* Output Section */}
         <div className='w-full min-h-[120px]'>
           {description && (
             <div className='p-5 rounded-2xl bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20 shadow-sm animate-in fade-in slide-in-from-bottom-4 duration-500'>

@@ -10,12 +10,24 @@ const ProductPage = () => {
       >
         Our Products
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Link href="/product/image-describer" className="">
-          <Image src="/describer.png" alt="Image Describer" width={406} height={459} className="w-full h-auto border-2 border-muted rounded-lg" />
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+        <Link href='/product/image-describer' className=''>
+          <Image
+            src='/describer.png'
+            alt='Image Describer'
+            width={406}
+            height={459}
+            className='w-full h-auto border-2 border-muted rounded-lg'
+          />
         </Link>
-        <Link href="/product/ai-chat" className="">
-          <Image src="/ai-chat.png" alt="AI Chat" width={406} height={459} className="w-full h-auto border border-muted rounded-lg" />
+        <Link href='/product/ai-chat' className=''>
+          <Image
+            src='/ai-chat.png'
+            alt='AI Chat'
+            width={406}
+            height={459}
+            className='w-full h-auto border border-muted rounded-lg'
+          />
         </Link>
       </div>
     </div>

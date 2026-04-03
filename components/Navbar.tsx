@@ -17,7 +17,11 @@ const Navbar = () => {
     <div className='h-16 w-full max-w-8xl mx-auto border-b-2 border-primary flex justify-between items-center px-4'>
       <Link href='/' className='flex items-center gap-2'>
         <Box className='text-primary max-md:hidden' size={32} />
-        <h1 className={`text-xl md:text-2xl font-bold ${instrumentSerif.className} `}>Puter.js</h1>
+        <h1
+          className={`text-xl md:text-2xl font-bold ${instrumentSerif.className} `}
+        >
+          Puter.js
+        </h1>
       </Link>
       <div className='flex items-center gap-4'>
         <div className='hidden lg:flex items-center gap-4'>
@@ -37,9 +41,8 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-
       </div>
-      <div className="flex items-center gap-4">
+      <div className='flex items-center gap-4'>
         <SheetNav />
         <ModeToggle />
       </div>

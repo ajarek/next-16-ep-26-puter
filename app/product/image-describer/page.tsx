@@ -1,5 +1,4 @@
-import { instrumentSerif } from '@/app/fonts'
-import ImageDescriber from '@/components/ImageDescriber'
+import ImageDescriber from "@/components/ImageDescriber"
 
 const ImageDescriberPage = () => {
   return (

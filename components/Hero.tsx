@@ -1,5 +1,4 @@
 import { ArrowRight, Play } from "lucide-react"
-import React from "react"
 import { Button } from "./ui/button"
 import { instrumentSerif } from "@/app/fonts"
 import Link from "next/link"
@@ -20,7 +19,7 @@ const Hero = () => {
           intelligence capabilities into your applications.
         </p>
 
-        <div className='flex gap-4'>
+        <div className='flex flex-wrap gap-4 justify-center'>
           <Link href='https://docs.puter.com/'>
             <Button className='cursor-pointer  uppercase tracking-wider rounded-lg'>
               Documentation <ArrowRight className='ml-2 h-4 w-4' />

@@ -4,6 +4,7 @@ import "./globals.css"
 import Navbar from "@/components/Navbar"
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { TooltipProvider } from "@/components/ui/tooltip"
+import { Toaster } from "sonner"
 
 export const metadata: Metadata = {
   title: "Puter.js example for Next.js 16",
@@ -22,18 +23,19 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className='min-h-full flex flex-col'>
-         <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='dark'
+          enableSystem
+          disableTransitionOnChange
+        >
           <TooltipProvider>
             <Navbar />
             {children}
+            <Toaster />
           </TooltipProvider>
-          </ThemeProvider>
-        </body>
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

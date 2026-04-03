@@ -37,7 +37,10 @@ export function SheetNav() {
       <SheetContent className='lg:hidden   opacity-75 overflow-y-auto sheet-content'>
         <SheetHeader>
           <SheetTitle className='text-xl font-semibold'>
-            <Link href='/' className={`flex items-center gap-2 text-xl md:text-2xl font-bold ${instrumentSerif.className} `}>
+            <Link
+              href='/'
+              className={`flex items-center gap-2 text-xl md:text-2xl font-bold ${instrumentSerif.className} `}
+            >
               <Box className='text-primary' size={32} />
               Puter.js
             </Link>

@@ -1,4 +1,3 @@
-import React from "react"
 import { instrumentSerif } from "../fonts"
 import Link from "next/link"
 
@@ -23,7 +22,7 @@ const PricingPage = () => {
         rel='noopener noreferrer'
         className='text-center text-xl max-w-2xl underline text-primary'
       >
-       Start Building in Seconds
+        Start Building in Seconds
       </Link>
       <Link
         href='https://docs.puter.com/playground/'
@@ -31,7 +30,7 @@ const PricingPage = () => {
         rel='noopener noreferrer'
         className='text-center text-xl max-w-2xl underline text-primary'
       >
-       Try the Playground
+        Try the Playground
       </Link>
     </div>
   )
